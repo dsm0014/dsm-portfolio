@@ -1,0 +1,7 @@
+spring:
+  healthcheckEndpoint: /api/health
+  replicas: 1
+  docker:
+    repository: gigabyteme
+    image: dsm-portfolio
+    tag: 1.0.0-SNAPSHOT
