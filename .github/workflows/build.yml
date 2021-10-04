@@ -1,4 +1,4 @@
-name: Iguana CI
+name: Portfolio CI
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  iguana-build:
+  portfolio-build:
 
     runs-on: ubuntu-latest
 

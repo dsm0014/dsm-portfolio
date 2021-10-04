@@ -11,7 +11,7 @@ on:
       - '!main'
 
 jobs:
-  iguana-unit-test:
+  portfolio-unit-test:
 
     runs-on: ubuntu-latest
 

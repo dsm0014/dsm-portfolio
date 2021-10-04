@@ -1,6 +1,0 @@
-com/dsm/portfolio/controller/WebController.java
- com.dsm.portfolio.controller.WebController
-com/dsm/portfolio/PortfolioApplication.java
- com.dsm.portfolio.PortfolioApplication
-com/dsm/portfolio/controller/HealthController.java
- com.dsm.portfolio.controller.HealthController
