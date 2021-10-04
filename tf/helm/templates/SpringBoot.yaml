@@ -2,12 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: spring-{{ .Release.Name }}-service
-  annotations:
-    service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "8080"
-    service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
-    service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: {{ .Values.spring.healthcheckEndpoint }}
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: spring-{{ .Release.Name }}
   ports:
@@ -46,5 +42,5 @@ spec:
                 - name: Content-Type
                   value: application/json
             initialDelaySeconds: 10
-            periodSeconds: 5
+            periodSeconds: 15
 
